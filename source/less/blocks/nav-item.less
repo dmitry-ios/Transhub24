@@ -1,0 +1,25 @@
+.nav-item {
+  @media (max-width: @mobile-width-only) {
+    &--closed {
+      display: none;
+    }
+  }
+
+  &--decore-line {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: calc(50% - 50vw);
+      bottom: 0;
+
+      content: "";
+
+      width: 100vw;
+      height: 1px;
+
+      background-color: @basic-grey;
+      opacity: 0.3;
+    }
+  }
+}

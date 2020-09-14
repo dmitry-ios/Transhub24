@@ -1,0 +1,38 @@
+.site-contacts {
+  padding: 0;
+  padding-top: 11px;
+  margin: 0;
+
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 88px;
+  }
+}
+
+.site-contacts__link {
+  color: inherit;
+
+  &:hover {
+    color: @basic-white;
+  }
+}
+
+.site-contacts__item {
+  @media (min-width: @tablet-width) {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 50px;
+  }
+}

@@ -1,0 +1,39 @@
+.floating-header {
+  &--fixed {
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    background-color: @basic-white;
+  }
+}
+
+.floating-header--fixed .floating-header__top {
+  color: @middle-grey;
+
+  &::before {
+    background-color: @weet-grey;
+  }
+}
+
+.floating-header--fixed .floating-header__bottom {
+  color: @middle-blue-black;
+}
+
+.floating-header--fixed .floating-header__link {
+  &:hover {
+    color: @white-blue;
+  }
+}
+
+.floating-header--fixed .floating-header__details {
+  fill: @middle-blue-black;
+}
+
+.floating-header--fixed .floating-header__button {
+  svg {
+    fill: @dark-sky;
+  }
+}

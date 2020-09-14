@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  color: @basic-white;
+  font-family: @main-fontstack;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  background-color: @dark-sky;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  min-width: @min-mobile-container;
+  max-width: @max-mobile-container;
+
+  @media (min-width: @tablet-width) {
+    max-width: @max-tablet-container;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 5px;
+    max-width: @max-desktop-container;
+  }
+}
